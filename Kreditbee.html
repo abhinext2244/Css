@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #container {
+        width: 100%;
+      }
+      #header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .content {
+        width: 600px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .content button {
+        border: 1px solid red;
+        color: red;
+      }
+      .box-heading {
+        text-align: center;
+      }
+      .line-border {
+        width: 100px;
+        margin: 0 auto;
+        border: 2px solid red;
+      }
+      #content-box{
+        display:flex;
+        justify-content: space-around;
+        margin:10px;
+      }
+      #card{
+        width:340px;
+        /* border:1px solid red; */
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    #card h4,p,img{
+        margin:10px;
+    }
+    #fresh-blog{
+        display: flex;
+        justify-content: space-around;
+    }
+    .fresh-blog-box{
+        width:300px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+      }
+    .fresh-blog-box  img{
+        width:230px;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .fresh-blog-box h4 ,p{
+        margin-left: 15px;
+    }
+    .fresh-blog-heading{
+        margin-left:10px;
+    }
+    #form-container{
+        width:100%;
+        height:600px;
+        display: flex;
+        background-color: yellow;
+        justify-content: center;
+        align-items: center;
+        margin:20px;
+        position: relative;
+    }
+    #form{
+        width:400px;
+        height:500px;
+        margin: auto;
+        background-color: #ffff;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+        position: relative;
+        
+      }
+    #footer{
+        color:white;
+        text-align: center;
+        width:100%;
+        margin:20px;
+        background-color: black;
+    }
+    .cross{
+        position: relative;
+        width: 20px;
+        height: 20px;
+        margin-left:350px;
+        margin-top:20px;
+    }
+    .cross::before, .cross::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 5px;
+    height: 100%;
+    background-color: black;
+    transform-origin: center;
+}
+
+.cross::before {
+    transform: rotate(45deg);
+}
+
+.cross::after {
+    transform: rotate(-45deg);
+}
+#formInput{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+margin:20px;
+}
+input{
+    width:300px;
+}
+    </style>
+  </head>
+  <body>
+    <div id="container">
+      <div id="header">
+        <div class="logo"><h2>KreditBee</h2></div>
+        <div class="content">
+          <div>Loans</div>
+          <div>Calculators</div>
+          <div>Creadit Report</div>
+          <div>Refer & Earn</div>
+          <div>Repayment</div>
+          <button>Sing In</button>
+        </div>
+      </div>
+      <div class="box-heading">
+        <h1>Why Choose KreditBee?</h1>
+        <div class="line-border"></div>
+      </div>
+      <div id="content-box">
+        <div id="card">
+          <img
+            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-1.svg"
+            alt=""
+          />
+          <h4>Lower Interest Rates</h4>
+          <p>
+            Get loans for multiple purposes at lower interest rates to suit your
+            needs
+          </p>
+        </div>
+        <div id="card">
+          <img
+            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-2.svg"
+            alt=""
+          />
+          <h4>Fast Processing and Disbursal</h4>
+          <p>
+            Apply online, check your eligibility and get money directly in your
+            bank in 10 minutes
+          </p>
+        </div>
+        <div id="card">
+          <img
+            src="https://ik.imagekit.io/krazybee/kreditbee_in/banners/New_Web/ic-3.svg"
+            alt=""
+          />
+          <h4>Easy Repayment Options</h4>
+          <p>Repay the loan amount in easy EMI with flexible tenure options</p>
+        </div>
+      </div>
+      <div class="fresh-blog-heading">
+          <h3> Fresh from the blog</h3>
+      </div>
+      <div id="fresh-blog">
+         <div class="fresh-blog-box">
+            <figure>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQQCsF4zh8BBGKTNAFVBWSFmJ5Y3vtUr9IYgg&s" alt="">
+                <figcaption>Shopping Guides</figcaption>
+            </figure>
+            <h4>9 comfy Throws for Cosy Autumn vibes</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laudantium hic facilis laborum. Unde, iste?</p>
+         </div>
+         <div class="fresh-blog-box">
+            <figure>
+                <img src="https://cdn.shopify.com/s/files/1/0553/8142/6241/files/LOOK2_BEACH_480x480.jpg?v=1698838834" alt="">
+                <figcaption>Shopping Guides</figcaption>
+            </figure>
+            <h4>14 Beautifuly bages That Express your Unique Style</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laudantium hic facilis laborum. Unde, iste?</p>
+         </div>
+         <div class="fresh-blog-box">
+            <figure>
+                <img src="https://media-cldnry.s-nbcnews.com/image/upload/t_fit-560w,f_auto,q_auto:best/newscms/2019_47/3114221/191121-stock-women-gift-shopping-behind-ew-739p.jpg" alt="">
+                <figcaption>Gift Guides</figcaption>
+            </figure>
+            <h4> The Best Gift ideas for All Kides Ages</h4>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem laudantium hic facilis laborum. Unde, iste?</p>
+         </div>
+      </div>
+      <div id="form-container">
+          <div id="form">
+            <div class="cross">
+                <div class="line"></div>
+                <div class="line1"></div>
+            </div>
+        <h2 style="text-align:center">Create Account</h2>
+        <p style="text-align:center;">Already have an account?<a style="text-align:center;" href="">Sing In</a></p>
+        <form action="" id="formInput">
+            <label for="">First Name:</label>
+            <input type="text" placeholder="Enter your Name">
+            <label for="">Email:</label>
+            <input type="email" placeholder="Enter your email">
+            <label for="">Phone Number:</label>
+            <input type="number" placeholder="Enter your Number">
+            <input type="submit" style="background-color: blue;color:white;margin-top:20px;">
+        </form>
+          </div>
+      </div>
+    <div id="footer">
+        <h3>CopyRight @All Right Reseved</h3>
+    </div>
+    </div>
+  </body>
+</html>
